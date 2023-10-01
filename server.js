@@ -6,9 +6,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     console.log('Request request to the most basic endpoint, sending response from server.');
-    res.status(200).send({
-        greeting: "Hello to the worlds most basic express app."
-    });
+    res.status(200).send('<h1>Hello Baba, Ma and Didi. I love you guys.<h1>');
 });
 
 const PORT = process.env.PORT || 80;
